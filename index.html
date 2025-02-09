@@ -4,17 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TikTok Video Downloader</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>TikTok Video Downloader</h1>
-        <form id="downloadForm">
-            <input type="text" id="tiktokUrl" placeholder="Paste TikTok video URL here" required>
-            <button type="submit">Download Video</button>
-        </form>
-        <div id="status"></div>
-    </div>
+        <p>Download TikTok videos in high quality</p>
+    </header>
+
+    <main>
+        <section class="download-section">
+            <div class="input-container">
+                <input type="text" id="video-url" placeholder="Paste TikTok video URL here...">
+                <button id="download-btn">Download</button>
+            </div>
+            
+            <div class="video-preview" id="video-preview">
+                <!-- Video preview will be inserted here -->
+            </div>
+
+            <div class="download-options" id="download-options">
+                <!-- Download options will be inserted here -->
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <ol>
+                <li>Copy the TikTok video URL from the app</li>
+                <li>Paste it in the input field above</li>
+                <li>Click 'Download' and choose your preferred quality</li>
+            </ol>
+        </section>
+
+        <section class="faq">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <h3>Is this free to use?</h3>
+                <p>Yes, our TikTok downloader is completely free to use.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do you store the videos?</h3>
+                <p>No, we don't store or host any videos.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What formats are supported?</h3>
+                <p>We support MP4 format with various resolutions.</p>
+            </div>
+        </section>
+
+        <section class="disclaimer">
+            <h2>Disclaimer</h2>
+            <p>This tool is for personal use only. Please respect the copyright of content creators.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TikTok Downloader. All rights reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
